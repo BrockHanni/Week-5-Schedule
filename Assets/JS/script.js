@@ -1,19 +1,14 @@
-// Wrap all code that interacts with the DOM in a call to jQuery to ensure that
-// the code isn't run until the browser has finished rendering all the elements
-// in the html.
 var dayDate = document.getElementById("currentDay")
 var dayTime = document.getElementById("currentTime")
 var today = dayjs()
 dayDate.textContent = today.format('MMMM DD, YYYY')
 dayTime.textContent = today.format('h:mm a')
-// added new time instead of today to make sure it was working
 
 function nine() {
   var hour9 = document.getElementById("hour-9")
   var hour9Text = hour9.textContent.trim()
   var hour9Number = parseInt(hour9Text.replace(/\D/g,''))
   var hourNow = parseInt(today.format('HH'))
-  // added today instead of today to make sure its working
 
   if (hourNow < hour9Number){
     hour9.classList.add("future")
@@ -31,7 +26,6 @@ function ten() {
   var hour10Text = hour10.textContent.trim()
   var hour10Number = parseInt(hour10Text.replace(/\D/g,''))
   var hourNow = parseInt(today.format('HH'))
-  // added today instead of today to make sure its working
 
   if (hourNow < hour10Number){
     hour10.classList.add("future")
@@ -49,7 +43,6 @@ function eleven() {
   var hour11Text = hour11.textContent.trim()
   var hour11Number = parseInt(hour11Text.replace(/\D/g,''))
   var hourNow = parseInt(today.format('HH'))
-  // added today instead of today to make sure its working
 
   if (hourNow < hour11Number){
     hour11.classList.add("future")
@@ -67,7 +60,6 @@ function twelve() {
   var hour12Text = hour12.textContent.trim()
   var hour12Number = parseInt(hour12Text.replace(/\D/g,''))
   var hourNow = parseInt(today.format('HH'))
-  // added today instead of today to make sure its working
 
   if (hourNow < hour12Number){
     hour12.classList.add("future")
@@ -85,7 +77,6 @@ function one() {
   var hour1Text = hour1.textContent.trim()
   var hour1Number = parseInt(hour1Text.replace(/\D/g,''))
   var hourNow = parseInt(today.format('HH'))
-  // added today instead of today to make sure its working
 
   if (hourNow < hour1Number){
     hour1.classList.add("future")
@@ -104,7 +95,6 @@ function two() {
   var hour2Text = hour2.textContent.trim()
   var hour2Number = parseInt(hour2Text.replace(/\D/g,''))
   var hourNow = parseInt(today.format('HH'))
-  // added today instead of today to make sure its working
 
   if (hourNow < hour2Number){
     hour2.classList.add("future")
@@ -123,7 +113,6 @@ function three() {
   var hour3Text = hour3.textContent.trim()
   var hour3Number = parseInt(hour3Text.replace(/\D/g,''))
   var hourNow = parseInt(today.format('HH'))
-  // added today instead of today to make sure its working
 
   if (hourNow < hour3Number){
     hour3.classList.add("future")
@@ -142,8 +131,6 @@ function four() {
   var hour4Text = hour4.textContent.trim()
   var hour4Number = parseInt(hour4Text.replace(/\D/g,''))
   var hourNow = parseInt(today.format('HH'))
-  // added today instead of today to make sure its working
-
   if (hourNow < hour4Number){
     hour4.classList.add("future")
   }
@@ -161,7 +148,6 @@ function five() {
   var hour5Text = hour5.textContent.trim()
   var hour5Number = parseInt(hour5Text.replace(/\D/g,''))
   var hourNow = parseInt(today.format('HH'))
-  // added today instead of today to make sure its working
 
   if (hourNow < hour5Number){
     hour5.classList.add("future")
